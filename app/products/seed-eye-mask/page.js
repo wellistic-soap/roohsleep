@@ -190,6 +190,8 @@ export default function SeedEyeMaskPage() {
         <div className="absolute inset-0 text-jade-400">
           <JaaliPattern id="jaali-mask-hero" opacity={0.12} />
         </div>
+        <div className="rooh-glow pointer-events-none absolute inset-0 bg-[radial-gradient(120%_90%_at_78%_60%,rgba(212,180,120,.28)_0%,rgba(212,180,120,0)_55%)]" />
+        <div className="rooh-grain opacity-[0.06] mix-blend-overlay" />
 
         <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-5 py-20 sm:px-8 sm:py-24 lg:grid-cols-2 lg:gap-20">
           <div className="rooh-rise">
@@ -219,7 +221,7 @@ export default function SeedEyeMaskPage() {
             <CtaNote className="mt-4 text-jade-300/80" />
           </div>
 
-          <div className="rooh-arch relative aspect-[4/5] w-full max-w-md overflow-hidden bg-jade-800 lg:justify-self-end">
+          <div className="rooh-arch relative aspect-[4/5] w-full max-w-md overflow-hidden bg-jade-800 shadow-[0_40px_60px_-32px_rgba(22,33,30,.55)] lg:justify-self-end">
             <Image
               src={product.image}
               alt={product.imageAlt}
@@ -269,8 +271,10 @@ export default function SeedEyeMaskPage() {
       </section>
 
       {/* Mechanism */}
-      <section className="bg-sand-100">
-        <div className="mx-auto max-w-6xl px-5 py-24 sm:px-8">
+      <section className="relative overflow-hidden bg-sand-100">
+        <div className="pointer-events-none absolute inset-0 bg-[repeating-linear-gradient(90deg,rgba(60,90,80,.05)_0_1px,transparent_1px_6px),repeating-linear-gradient(0deg,rgba(60,90,80,.05)_0_1px,transparent_1px_6px)]" />
+        <div className="rooh-grain opacity-[0.05] mix-blend-multiply" />
+        <div className="relative mx-auto max-w-6xl px-5 py-24 sm:px-8">
           <div className="text-center">
             <BlockPrintRule className="mx-auto h-4 w-48 text-jade-400" />
             <h2 className="mt-8 font-display text-4xl text-jade-900 sm:text-5xl">
@@ -414,7 +418,7 @@ export default function SeedEyeMaskPage() {
       {/* Materials */}
       <section className="bg-sand-100">
         <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 py-24 sm:px-8 lg:grid-cols-2 lg:gap-20">
-          <div className="rooh-arch relative aspect-[4/5] w-full max-w-md overflow-hidden bg-sand-200">
+          <div className="rooh-arch relative aspect-[4/5] w-full max-w-md overflow-hidden bg-sand-200 shadow-[0_40px_60px_-32px_rgba(22,33,30,.45)]">
             <Image
               src={product.image}
               alt={product.imageAlt}
@@ -518,6 +522,7 @@ export default function SeedEyeMaskPage() {
         <div className="absolute inset-0 text-jade-400">
           <JaaliPattern id="jaali-mask-close" opacity={0.12} />
         </div>
+        <div className="rooh-grain opacity-[0.07] mix-blend-overlay" />
         <div className="relative mx-auto max-w-3xl px-5 py-24 text-center sm:px-8 sm:py-28">
           <LotusMark className="mx-auto h-10 w-10 text-jade-300" />
           <h2 className="mt-8 font-display text-4xl leading-tight font-light sm:text-5xl">

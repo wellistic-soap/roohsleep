@@ -21,6 +21,8 @@
   --color-clay: #b4674a;
   --color-clay-soft: #c98a6f;
   --color-brass: #a98a54;
+  --color-sage: #7c9a8e;
+  --color-footer: #111f1a;
 
   --font-display: var(--font-display), Georgia, "Times New Roman", serif;
   --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
@@ -28,8 +30,18 @@
   --ease-calm: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
+:root {
+  /* Fractal-noise grain, laid over flat colour fields so large areas of jade
+     and sand read as paper rather than as filled rectangles. */
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 body {
@@ -51,12 +63,44 @@ body {
 }
 
 .rooh-rise {
-  animation: rooh-rise 1s var(--ease-calm) both;
+  animation: rooh-rise 1.1s var(--ease-calm) both;
+}
+
+/* Slow warm bloom behind the hero, so the dark field is not static. */
+@keyframes rooh-glow {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.rooh-glow {
+  animation: rooh-glow 9s var(--ease-calm) infinite;
+}
+
+/* Grain overlay. Pair with an opacity and mix-blend utility at the call site. */
+.rooh-grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: var(--grain);
+}
+
+/* Outlined display numerals. Set --numeral on the element to colour the stroke. */
+.rooh-numeral {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--numeral, var(--color-jade-700));
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .rooh-rise {
-    animation: none;
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
   }
   html {
     scroll-behavior: auto;

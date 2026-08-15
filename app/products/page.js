@@ -17,6 +17,8 @@ export default function ProductsPage() {
         <div className="absolute inset-0 text-jade-300">
           <JaaliPattern id="jaali-products" opacity={0.12} />
         </div>
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(90%_120%_at_20%_0%,rgba(122,138,94,.16),transparent_60%)]" />
+        <div className="rooh-grain opacity-[0.07] mix-blend-overlay" />
         <div className="relative mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-28">
           <p className="text-xs uppercase tracking-[0.3em] text-jade-300">The collection</p>
           <h1 className="mt-6 max-w-2xl font-display text-5xl leading-tight font-light sm:text-6xl">
@@ -33,18 +35,18 @@ export default function ProductsPage() {
         {products.map((product, i) => (
           <article
             key={product.slug}
-            className={`grid items-center gap-12 border-b border-jade-200 py-20 lg:grid-cols-2 lg:gap-20 ${
+            className={`group grid items-center gap-12 border-b border-jade-200 py-20 lg:grid-cols-2 lg:gap-20 ${
               i % 2 === 1 ? "lg:[&>div:first-child]:order-2" : ""
             }`}
           >
             <div>
-              <div className="rooh-arch relative aspect-[4/5] w-full max-w-sm overflow-hidden bg-sand-100">
+              <div className="rooh-arch relative aspect-[4/5] w-full max-w-sm overflow-hidden bg-sand-100 shadow-[0_34px_52px_-28px_rgba(22,33,30,.42)] transition-shadow duration-700 ease-[var(--ease-calm)] group-hover:shadow-[0_46px_64px_-28px_rgba(22,33,30,.5)]">
                 <Image
                   src={product.image}
                   alt={product.imageAlt}
                   fill
                   sizes="(min-width: 1024px) 384px, 100vw"
-                  className="object-cover"
+                  className="object-cover transition-transform duration-[900ms] ease-[var(--ease-calm)] group-hover:scale-[1.045]"
                 />
               </div>
             </div>

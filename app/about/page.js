@@ -29,6 +29,8 @@ export default function AboutPage() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-jade-900/35" />
+        <div className="rooh-glow pointer-events-none absolute inset-0 bg-[radial-gradient(120%_90%_at_78%_60%,rgba(212,180,120,.28)_0%,rgba(212,180,120,0)_55%)]" />
+        <div className="rooh-grain opacity-[0.06] mix-blend-overlay" />
         <div className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 sm:py-32">
           <LotusMark className="h-10 w-10 text-jade-300" />
           <h1 className="mt-8 max-w-3xl font-display text-5xl leading-[1.08] font-light sm:text-6xl">
@@ -57,9 +59,11 @@ export default function AboutPage() {
       </section>
 
       {/* The sourcing story */}
-      <section className="bg-sand-100">
-        <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 py-24 sm:px-8 lg:grid-cols-2 lg:gap-20">
-          <div className="rooh-arch relative aspect-[4/5] w-full max-w-md overflow-hidden bg-sand-200">
+      <section className="relative overflow-hidden bg-sand-100">
+        <div className="pointer-events-none absolute inset-0 bg-[repeating-linear-gradient(90deg,rgba(60,90,80,.05)_0_1px,transparent_1px_6px),repeating-linear-gradient(0deg,rgba(60,90,80,.05)_0_1px,transparent_1px_6px)]" />
+        <div className="rooh-grain opacity-[0.05] mix-blend-multiply" />
+        <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-5 py-24 sm:px-8 lg:grid-cols-2 lg:gap-20">
+          <div className="rooh-arch relative aspect-[4/5] w-full max-w-md overflow-hidden bg-sand-200 shadow-[0_40px_60px_-32px_rgba(22,33,30,.45)]">
             <Image
               src="/images/about-story.png"
               alt="Late afternoon jaali lattice shadows across a plaster wall and wooden floor"
@@ -120,8 +124,9 @@ export default function AboutPage() {
       </section>
 
       {/* Textile heritage */}
-      <section className="bg-jade-900 text-cream">
-        <div className="mx-auto max-w-3xl px-5 py-24 text-center sm:px-8 sm:py-32">
+      <section className="relative overflow-hidden bg-jade-900 text-cream">
+        <div className="rooh-grain opacity-[0.07] mix-blend-overlay" />
+        <div className="relative mx-auto max-w-3xl px-5 py-24 text-center sm:px-8 sm:py-32">
           <p className="text-xs uppercase tracking-[0.3em] text-jade-300">Heritage</p>
           <p className="mt-8 font-display text-3xl leading-relaxed sm:text-4xl">
             These regions have been making cloth for a very long time. We are a small,

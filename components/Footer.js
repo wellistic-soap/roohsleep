@@ -4,7 +4,7 @@ import { BlockPrintRule, LotusMark } from "./Motifs";
 
 export default function Footer() {
   return (
-    <footer className="mt-24 bg-jade-900 text-sand-200">
+    <footer className="mt-6 bg-footer text-sand-200">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
         <BlockPrintRule className="mb-12 h-4 w-full text-jade-600" />
 
@@ -12,7 +12,10 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2.5">
               <LotusMark className="h-7 w-7 text-jade-300" />
-              <span className="font-display text-2xl tracking-[0.14em] text-cream">rooh</span>
+              <span className="font-display text-[26px] tracking-[0.14em] text-cream">rooh</span>
+              <span lang="ur" dir="rtl" className="font-display text-[18px] text-jade-400">
+                روح
+              </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-jade-200/80">
               Rooh means soul. Sleep textiles made through direct relationships with the

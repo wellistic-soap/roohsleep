@@ -19,7 +19,16 @@ export default function Nav() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
         <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
           <LotusMark className="h-7 w-7 text-jade-700" />
-          <span className="font-display text-2xl tracking-[0.14em] text-jade-900">rooh</span>
+          <span className="font-display text-[26px] leading-none tracking-[0.14em] text-jade-900">
+            rooh
+          </span>
+          <span
+            lang="ur"
+            dir="rtl"
+            className="translate-y-px font-display text-[19px] text-jade-500"
+          >
+            روح
+          </span>
         </Link>
 
         <div className="hidden items-center gap-9 md:flex">

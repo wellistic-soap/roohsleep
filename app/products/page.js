@@ -1,5 +1,6 @@
 import { products } from "@/lib/products";
 import Image from "next/image";
+import Link from "next/link";
 import { amazonLinkFor, AMAZON_STOREFRONT, buildAmazonLink } from "@/lib/amazon";
 import { BlockPrintRule, JaaliPattern } from "@/components/Motifs";
 
@@ -80,6 +81,14 @@ export default function ProductsPage() {
                 Shop on Amazon
                 <span aria-hidden="true">&rarr;</span>
               </a>
+              {product.detail && (
+                <Link
+                  href={product.detail}
+                  className="mt-10 ml-6 inline-block border-b border-jade-400 pb-1 text-xs uppercase tracking-[0.18em] text-jade-800 transition-colors hover:border-clay hover:text-clay"
+                >
+                  Full details
+                </Link>
+              )}
               <p className="mt-3 text-xs text-jade-500">
                 Opens Amazon in a new tab. Pricing and delivery shown there.
               </p>

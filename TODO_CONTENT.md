@@ -20,6 +20,14 @@ There is no photography in the mockup. Every image slot is an arch-shaped placeh
 - Contour pillow: sizing/fit-by-sleep-position copy is flagged but not written.
 - Trust strip on the homepage carries a `[placeholder testimonial]` marker. Do not replace with invented quotes; wait for real reviews.
 
+## Seed eye mask sales page (`/products/seed-eye-mask`)
+Long-form direct response layout. Placeholders that must be resolved before launch:
+- **Proof strip under the hero** is deliberately empty, carrying a bracketed note instead of a star rating and review count. Fill only from real Amazon reviews.
+- **Seed type and sourcing region** are marked TBD in the FAQ. Name both there and on the label.
+- **Weight in grams** is marked TBD in the FAQ; add once production samples are final.
+- Claims held back on purpose: nothing about what the mask does to your body, no "blackout" claim, and an explicit "do not microwave" answer, since a seed-filled mask invites that assumption.
+- Comparison table names construction categories (flat fabric, moulded cup) rather than competing brands. Keep it that way.
+
 ## Pricing
 No prices are shown anywhere on the site, since pricing is managed on Amazon. Confirm with the founder whether that stays true at launch.
 

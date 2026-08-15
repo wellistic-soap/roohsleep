@@ -84,6 +84,19 @@ Placeholder Amazon URLs are fine for the mockup; just keep them centralized and 
 
 ---
 
+## Phase 2 — NOT in scope for this build (future roadmap, do not scaffold yet)
+
+Rooh may later add a small line of sleep supplements (melatonin-free and melatonin-based sleep support, magnesium, calming botanicals), produced via a white-label print-on-demand partner (e.g. Supliful) rather than in-house manufacturing. This avoids Rooh taking on FDA facility registration and manufacturing directly.
+
+**This does not remove Rooh's compliance responsibility.** Rooh is the brand on the label and remains responsible for any claims made in its own marketing, regardless of who manufactures the product. If/when this phase is built:
+- No unsubstantiated health or medical claims in any product copy, marketing page, or ad ("reduces stress," "cures insomnia," "clinically proven," etc.) — same guardrail as the textile line, applies equally here, arguably more strictly given the ingested-product category
+- Any claims must be reviewed against what the manufacturing partner can actually substantiate before publishing
+- This is a distinct, lower-differentiation experiment (white-label formulas available to any seller on the same platform) rather than an extension of Rooh's core sourcing advantage (direct manufacturer relationships in Sialkot / South & Southeast Asia). Keep it visually and structurally separate from the core textile line until/unless it proves out — do not blend supplement SKUs into the main product grid or "Our Story" sourcing narrative, since that story is specifically about textile manufacturing relationships and would be inaccurate if applied to a white-labeled supplement.
+
+**Action for now:** do not build product pages, nav items, or components for supplements yet. This section exists so future work (by Claude Code or otherwise) knows the constraint before scaffolding anything in this category.
+
+---
+
 ## Copy guardrails (apply to any text Claude Code generates as placeholder copy)
 
 - No health, medical, or therapeutic claims (no "reduces inflammation," "clinically proven," "cures insomnia," etc.)

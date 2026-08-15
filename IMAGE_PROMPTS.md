@@ -1,6 +1,6 @@
 # Rooh — image generation prompts (OpenAI GPT Image)
 
-Nine prompts, one per image slot in the current build. Written for `gpt-image-1`
+Eight prompts, one per image slot in the current build. Written for `gpt-image-1`
 (API) or the image tool in ChatGPT.
 
 ---
@@ -14,9 +14,9 @@ Nine prompts, one per image slot in the current build. Written for `gpt-image-1`
   afterwards; do not ask the model for 3:4 or 16:9 directly.
 - Generate 3 to 4 variants per slot, pick one, then use the **edit** endpoint
   (`images.edit`) with that winner as input for any revisions. Re-rolling from
-  scratch breaks consistency across the four products.
+  scratch breaks consistency across the three products.
 
-**Product shots: attach a reference photo.** For prompts 2 through 5, shoot the
+**Product shots: attach a reference photo.** For prompts 2 through 4, shoot the
 real product on a phone against any plain surface and pass it to `images.edit`.
 The model restyles the scene and lighting while keeping your actual product.
 Generating a pillowcase from text alone produces a pillowcase you do not sell,
@@ -36,7 +36,7 @@ subject centred and in the lower two thirds. Each prompt already says this.
 ## The style anchor
 
 Paste this block at the end of **every** prompt below, unchanged. It is what
-makes four separately generated products read as one product line.
+makes three separately generated products read as one product line.
 
 ```
 Shot on medium format, 80mm lens, f/4. Single soft window light from camera
@@ -81,20 +81,7 @@ anything busy on that side kills legibility. Crop to roughly 16:9.
 
 ---
 
-## 3. Cervical Contour Pillow — `1024x1536`
-
-> A contoured cervical support pillow with a gentle curved profile and a soft
-> knit cover in warm clay terracotta, photographed in profile from the side so
-> the shaped curve reads clearly against the background. It rests on the same
-> bare sand-coloured linen sheet, in the same room and the same morning light as
-> a matching photograph of a jade green pillow. The knit cover shows a fine
-> ribbed texture. Plain warm off-white plaster wall behind, softly out of focus.
-> The pillow sits in the lower two thirds of the frame with clear empty space
-> above it.
-
----
-
-## 4. Silk Pillowcase — `1024x1536`
+## 3. Silk Pillowcase — `1024x1536`
 
 > A pillow in a mulberry silk pillowcase the colour of aged brass, a muted warm
 > gold, resting on the same bare sand-coloured linen sheet in the same room and
@@ -111,7 +98,7 @@ and powdery, closer to raw silk than satin."
 
 ---
 
-## 5. Seed-Filled Eye Mask — `1024x1536`
+## 4. Seed-Filled Eye Mask — `1024x1536`
 
 > A seed-filled sleep eye mask in soft natural cotton the colour of undyed
 > muslin, with a deep jade green stitched edge, lying flat on the same bare
@@ -124,7 +111,7 @@ and powdery, closer to raw silk than satin."
 
 ---
 
-## 6. Home story teaser — `1024x1536`
+## 5. Home story teaser — `1024x1536`
 
 > A stack of folded textiles on a worn wooden table in warm daylight: deep jade
 > green cotton, undyed muslin, sand-coloured linen, one length of muted clay
@@ -139,7 +126,7 @@ image, not a staged artisan. See the note at the bottom of this file.
 
 ---
 
-## 7. About page story image — `1024x1536`
+## 6. About page story image — `1024x1536`
 
 > Late afternoon sunlight passing through a carved stone jaali lattice screen and
 > falling across a plain plaster wall and a worn wooden floor, throwing a sharp
@@ -151,7 +138,7 @@ image, not a staged artisan. See the note at the bottom of this file.
 
 ---
 
-## 8. About page hero background — `1536x1024`
+## 7. About page hero background — `1536x1024`
 
 > An extreme close-up of dark jade green cotton fabric, filling the entire frame,
 > lit by a single raking light from the left so the weave structure casts fine
@@ -165,7 +152,7 @@ keep the overall image very low key."
 
 ---
 
-## 9. Social / OG image — `1536x1024`, crop to 1200x630
+## 8. Social / OG image — `1536x1024`, crop to 1200x630
 
 > A calm overhead flat lay on a warm off-white linen surface: a folded deep jade
 > green pillowcase, a natural cotton eye mask resting beside it, and a small
@@ -179,7 +166,7 @@ The left half stays empty so the wordmark can be composited over it.
 
 ## Two things to hold the line on
 
-**Do not generate the Sialkot imagery.** Prompts 6 and 7 are materials and
+**Do not generate the Sialkot imagery.** Prompts 5 and 6 are materials and
 architecture on purpose. An AI-generated photograph of a workshop floor, placed
 on the page whose entire argument is that the sourcing relationships are real and
 direct, converts your strongest claim into your only fabricated one. The

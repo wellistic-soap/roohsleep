@@ -7,7 +7,7 @@ import { BlockPrintRule, JaaliPattern } from "@/components/Motifs";
 export const metadata = {
   title: "Products",
   description:
-    "The Rooh collection: cooling pillowcase, cervical contour pillow, silk pillowcase, and seed-filled eye mask.",
+    "The Rooh collection: cooling pillowcase, silk pillowcase, and seed-filled eye mask.",
 };
 
 export default function ProductsPage() {
@@ -22,7 +22,7 @@ export default function ProductsPage() {
         <div className="relative mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-28">
           <p className="text-xs uppercase tracking-[0.3em] text-jade-300">The collection</p>
           <h1 className="mt-6 max-w-2xl font-display text-5xl leading-tight font-light sm:text-6xl">
-            Four pieces, one ritual.
+            Three pieces, one ritual.
           </h1>
           <p className="mt-7 max-w-xl text-sm leading-relaxed text-jade-100/85">
             Everything is bought and checked out on Amazon, so shipping and returns work

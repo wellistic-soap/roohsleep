@@ -11,13 +11,12 @@ Generation prompts for every slot below are in [IMAGE_PROMPTS.md](IMAGE_PROMPTS.
 
 There is no photography in the mockup. Every image slot is an arch-shaped placeholder (`ArchPlaceholder` in [components/Motifs.js](components/Motifs.js)) filled with a jaali lattice pattern.
 - Home hero: intended for a calm, dark-toned lifestyle video or still.
-- Product cards and product rows: one hero image per SKU, shared photography style across all four.
+- Product cards and product rows: one hero image per SKU, shared photography style across all three.
 - Our Story: workshop / Sialkot floor imagery, and optionally a founder portrait.
 
 ## Copy
-- [lib/products.js](lib/products.js) — all four product descriptions, materials lines, and taglines are written to the brand guardrails but are not founder-approved.
+- [lib/products.js](lib/products.js) — all three product descriptions, materials lines, and taglines are written to the brand guardrails but are not founder-approved.
 - Seed eye mask: seed type and sourcing region still marked TBD. Keep copy on texture, weight, and ritual only. No internal-health or therapeutic language.
-- Contour pillow: sizing/fit-by-sleep-position copy is flagged but not written.
 - Trust strip on the homepage carries a `[placeholder testimonial]` marker. Do not replace with invented quotes; wait for real reviews.
 
 ## Seed eye mask sales page (`/products/seed-eye-mask`)

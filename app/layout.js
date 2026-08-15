@@ -23,7 +23,7 @@ export const metadata = {
     template: "%s | Rooh",
   },
   description:
-    "Rooh makes cooling pillowcases, contour pillows, silk pillowcases, and seed-filled eye masks, sourced through direct relationships with makers across South and Southeast Asia.",
+    "Rooh makes cooling pillowcases, silk pillowcases, and seed-filled eye masks, sourced through direct relationships with makers across South and Southeast Asia.",
   openGraph: {
     title: "Rooh | Sleep textiles made with soul",
     description: "Sleep textiles sourced through direct relationships with the people who make them.",

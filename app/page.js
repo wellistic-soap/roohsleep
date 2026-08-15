@@ -199,7 +199,7 @@ export default function HomePage() {
         </Reveal>
 
         {/* Remaining SKUs */}
-        <div className="mt-24 grid gap-14 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-24 grid gap-14 sm:grid-cols-2">
           {rest.map((product, i) => (
             <Reveal key={product.slug} delay={120 * (i + 1)} className="group flex flex-col">
               <ProductImage
@@ -321,7 +321,7 @@ export default function HomePage() {
             {
               dot: "bg-clay",
               title: "A short line",
-              body: "Four pieces, one visual language, made to sit together on the same bed.",
+              body: "Three pieces, one visual language, made to sit together on the same bed.",
             },
           ].map((item) => (
             <div key={item.title}>

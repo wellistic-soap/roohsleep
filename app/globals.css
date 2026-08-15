@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  /* Muted jade + earthy neutrals. Warm, not clinical. */
+  --color-ink: #16211e;
+  --color-jade-900: #1c332c;
+  --color-jade-800: #24463c;
+  --color-jade-700: #2f5a4c;
+  --color-jade-600: #3f7263;
+  --color-jade-500: #5b8b7b;
+  --color-jade-400: #7c9a8e;
+  --color-jade-300: #a3bbb0;
+  --color-jade-200: #c8d6ce;
+  --color-jade-100: #e2eae4;
+
+  --color-sand-300: #d9cdb8;
+  --color-sand-200: #e8e0d3;
+  --color-sand-100: #f2ece1;
+  --color-cream: #f7f3ea;
+
+  --color-clay: #b4674a;
+  --color-clay-soft: #c98a6f;
+  --color-brass: #a98a54;
+
+  --font-display: var(--font-display), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+
+  --ease-calm: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Slow, quiet entrance. Nothing flashy. */
+@keyframes rooh-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rooh-rise {
+  animation: rooh-rise 1s var(--ease-calm) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rooh-rise {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Mughal-style arch used for product and story imagery. */
+.rooh-arch {
+  border-radius: 999px 999px 8px 8px;
+}
+
+::selection {
+  background: var(--color-jade-200);
+  color: var(--color-jade-900);
+}

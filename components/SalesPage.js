@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ProductImage from "@/components/ProductImage";
 import Link from "next/link";
 import { amazonLinkFor } from "@/lib/amazon";
 import { BlockPrintRule, JaaliPattern, LotusMark } from "@/components/Motifs";
@@ -83,16 +83,14 @@ export default function SalesPage({ product, copy }) {
             <CtaNote className="mt-4 text-jade-300/80" />
           </div>
 
-          <div className="rooh-arch relative aspect-[4/5] w-full max-w-md overflow-hidden bg-jade-800 shadow-[0_40px_60px_-32px_rgba(22,33,30,.55)] lg:justify-self-end">
-            <Image
-              src={product.image}
-              alt={product.imageAlt}
-              fill
-              priority
-              sizes="(min-width: 1024px) 448px, 100vw"
-              className="object-cover"
-            />
-          </div>
+          <ProductImage
+            product={product}
+            ratio="aspect-[4/5]"
+            priority
+            sizes="(min-width: 1024px) 448px, 100vw"
+            shadow="shadow-[0_40px_60px_-32px_rgba(22,33,30,.55)]"
+            className="w-full max-w-md bg-jade-800 lg:justify-self-end"
+          />
         </div>
 
         {/* Proof strip. TODO_CONTENT: fill only from genuine Amazon reviews.
@@ -281,15 +279,13 @@ export default function SalesPage({ product, copy }) {
         <div className="rooh-grain opacity-[0.05] mix-blend-multiply" />
         <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-5 py-24 sm:px-8 lg:grid-cols-2 lg:gap-20">
           <Reveal>
-            <div className="rooh-arch relative aspect-[4/5] w-full max-w-md overflow-hidden bg-sand-200 shadow-[0_40px_60px_-32px_rgba(22,33,30,.45)]">
-              <Image
-                src={product.image}
-                alt={product.imageAlt}
-                fill
-                sizes="(min-width: 1024px) 448px, 100vw"
-                className="object-cover"
-              />
-            </div>
+            <ProductImage
+              product={product}
+              ratio="aspect-[4/5]"
+              sizes="(min-width: 1024px) 448px, 100vw"
+              shadow="shadow-[0_40px_60px_-32px_rgba(22,33,30,.45)]"
+              className="w-full max-w-md bg-sand-200"
+            />
           </Reveal>
 
           <Reveal delay={120}>

@@ -1,5 +1,5 @@
 import { products } from "@/lib/products";
-import Image from "next/image";
+import ProductImage from "@/components/ProductImage";
 import Link from "next/link";
 import { amazonLinkFor, AMAZON_STOREFRONT, buildAmazonLink } from "@/lib/amazon";
 import { BlockPrintRule, JaaliPattern } from "@/components/Motifs";
@@ -40,22 +40,13 @@ export default function ProductsPage() {
             }`}
           >
             <div>
-              <div className="group/image rooh-arch relative aspect-[4/5] w-full max-w-sm overflow-hidden bg-sand-100 shadow-[0_34px_52px_-28px_rgba(22,33,30,.42)] transition-shadow duration-700 ease-[var(--ease-calm)] group-hover:shadow-[0_46px_64px_-28px_rgba(22,33,30,.5)]">
-                <Image
-                  src={product.image}
-                  alt={product.imageAlt}
-                  fill
-                  sizes="(min-width: 1024px) 384px, 100vw"
-                  className="object-cover transition-[opacity,transform] duration-[900ms] ease-[var(--ease-calm)] group-hover/image:scale-[1.045] group-hover/image:opacity-0"
-                />
-                <Image
-                  src={product.hoverImage}
-                  alt={product.hoverImageAlt}
-                  fill
-                  sizes="(min-width: 1024px) 384px, 100vw"
-                  className="object-cover opacity-0 transition-[opacity,transform] duration-[900ms] ease-[var(--ease-calm)] group-hover/image:scale-[1.045] group-hover/image:opacity-100"
-                />
-              </div>
+              <ProductImage
+                product={product}
+                ratio="aspect-[4/5]"
+                sizes="(min-width: 1024px) 384px, 100vw"
+                shadow="shadow-[0_34px_52px_-28px_rgba(22,33,30,.42)] group-hover:shadow-[0_46px_64px_-28px_rgba(22,33,30,.5)]"
+                className="w-full max-w-sm"
+              />
             </div>
 
             <div>

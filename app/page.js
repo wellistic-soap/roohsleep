@@ -5,6 +5,7 @@ import { amazonLinkFor } from "@/lib/amazon";
 import { BlockPrintRule } from "@/components/Motifs";
 import Reveal from "@/components/Reveal";
 import HeroParallax from "@/components/HeroParallax";
+import ProductImage from "@/components/ProductImage";
 
 /* Accent per SKU, driving the outlined numeral and the hover underline. */
 const accents = {
@@ -27,22 +28,6 @@ function ShopLink({ product, className = "" }) {
       Shop on Amazon
       <span aria-hidden="true">&rarr;</span>
     </a>
-  );
-}
-
-function ProductImage({ product, ratio, shadow }) {
-  return (
-    <div
-      className={`rooh-arch relative overflow-hidden bg-sand-100 ${ratio} ${shadow} transition-shadow duration-700 ease-[var(--ease-calm)]`}
-    >
-      <Image
-        src={product.image}
-        alt={product.imageAlt}
-        fill
-        sizes="(min-width: 1024px) 480px, 100vw"
-        className="object-cover transition-transform duration-[900ms] ease-[var(--ease-calm)] group-hover:scale-[1.045]"
-      />
-    </div>
   );
 }
 

@@ -89,6 +89,38 @@ body {
   background-image: var(--grain);
 }
 
+/* Product image hover swap: the lifestyle shot crossfades in over the product
+   shot, both layers sharing one zoom so it reads as a single object.
+
+   Scoped to .rooh-swap rather than a generic group, so only the image itself
+   triggers it and never an ancestor card. Gated on (hover: hover) and
+   (pointer: fine) because touch browsers latch :hover after a tap, which would
+   otherwise leave the second image showing until you tapped elsewhere. */
+.rooh-swap-top {
+  opacity: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .rooh-swap-base,
+  .rooh-swap-top {
+    transition:
+      opacity 700ms var(--ease-calm),
+      transform 900ms var(--ease-calm);
+  }
+  .rooh-swap:hover .rooh-swap-base {
+    opacity: 0;
+    transform: scale(1.045);
+  }
+  .rooh-swap:hover .rooh-swap-top {
+    opacity: 1;
+    transform: scale(1.045);
+  }
+  /* No second image: keep the plain zoom the rest of the site uses. */
+  .rooh-swap:hover .rooh-swap-base:only-child {
+    opacity: 1;
+  }
+}
+
 /* Outlined display numerals. Set --numeral on the element to colour the stroke. */
 .rooh-numeral {
   color: transparent;

@@ -19,13 +19,24 @@ There is no photography in the mockup. Every image slot is an arch-shaped placeh
 - Seed eye mask: seed type and sourcing region still marked TBD. Keep copy on texture, weight, and ritual only. No internal-health or therapeutic language.
 - Trust strip on the homepage carries a `[placeholder testimonial]` marker. Do not replace with invented quotes; wait for real reviews.
 
-## Seed eye mask sales page (`/products/seed-eye-mask`)
-Long-form direct response layout. Placeholders that must be resolved before launch:
-- **Proof strip under the hero** is deliberately empty, carrying a bracketed note instead of a star rating and review count. Fill only from real Amazon reviews.
-- **Seed type and sourcing region** are marked TBD in the FAQ. Name both there and on the label.
-- **Weight in grams** is marked TBD in the FAQ; add once production samples are final.
-- Claims held back on purpose: nothing about what the mask does to your body, no "blackout" claim, and an explicit "do not microwave" answer, since a seed-filled mask invites that assumption.
-- Comparison table names construction categories (flat fabric, moulded cup) rather than competing brands. Keep it that way.
+## Product sales pages (`/products/<slug>`)
+All three SKUs now have a long-form direct response page, sharing one template
+([components/SalesPage.js](components/SalesPage.js)) driven by per-product copy in
+[lib/salesCopy.js](lib/salesCopy.js). Placeholders to resolve before launch:
+- **Proof strips** on all three are deliberately empty, carrying a bracketed note instead of a star rating and review count. Fill only from real Amazon reviews.
+- **Cooling pillowcase**: exact dimensions and the launch colourway list are marked TBD in the FAQ.
+- **Silk pillowcase**: copy describes silk's low-friction surface only. Do not add hair or skin outcome claims without substantiation.
+- **Seed eye mask**: seed type, sourcing region, and weight in grams are marked TBD in the FAQ.
+- Claims held back on purpose across all three: nothing about what any product does to your body, no blackout claim on the mask, and an explicit "do not microwave" answer.
+- Comparison tables name construction categories (sateen, microfibre, polyester satin, flat fabric, moulded cup) rather than competing brands. Keep it that way.
+
+## Brand wordmark
+[components/Wordmark.js](components/Wordmark.js) is the traced hand-drawn logotype from
+the Claude Design project (`uploads/rooh_sleeping_eyes.svg`), where the two "o"
+characters are closed sleeping eyes. It replaced the improvised lotus lockup in the nav
+and footer.
+- The design project also contains `uploads/rooh_exact_match_vector.svg`, an alternative trace that has not been used. Confirm which is the approved mark.
+- The traced path is a single filled shape, so it cannot be recoloured part by part.
 
 ## Pricing
 No prices are shown anywhere on the site, since pricing is managed on Amazon. Confirm with the founder whether that stays true at launch.

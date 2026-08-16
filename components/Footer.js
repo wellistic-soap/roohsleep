@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AMAZON_STOREFRONT, buildAmazonLink } from "@/lib/amazon";
-import { BlockPrintRule, LotusMark } from "./Motifs";
+import { BlockPrintRule } from "./Motifs";
+import Wordmark from "./Wordmark";
 
 export default function Footer() {
   return (
@@ -11,8 +12,7 @@ export default function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-2.5">
-              <LotusMark className="h-7 w-7 text-jade-300" />
-              <span className="font-display text-[26px] tracking-[0.14em] text-cream">rooh</span>
+              <Wordmark className="h-9 w-auto text-cream" />
               <span lang="ur" dir="rtl" className="font-display text-[18px] text-jade-400">
                 روح
               </span>

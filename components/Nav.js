@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { AMAZON_STOREFRONT, buildAmazonLink } from "@/lib/amazon";
-import { LotusMark } from "./Motifs";
+import Wordmark from "./Wordmark";
 
 const links = [
   { href: "/", label: "Home" },
@@ -18,14 +18,11 @@ export default function Nav() {
     <header className="sticky top-0 z-50 border-b border-jade-200/60 bg-cream/85 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
         <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <LotusMark className="h-7 w-7 text-jade-700" />
-          <span className="font-display text-[26px] leading-none tracking-[0.14em] text-jade-900">
-            rooh
-          </span>
+          <Wordmark className="h-9 w-auto text-jade-900" />
           <span
             lang="ur"
             dir="rtl"
-            className="translate-y-px font-display text-[19px] text-jade-500"
+            className="font-display text-[19px] text-jade-500"
           >
             روح
           </span>

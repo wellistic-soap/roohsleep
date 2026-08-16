@@ -40,13 +40,20 @@ export default function ProductsPage() {
             }`}
           >
             <div>
-              <div className="rooh-arch relative aspect-[4/5] w-full max-w-sm overflow-hidden bg-sand-100 shadow-[0_34px_52px_-28px_rgba(22,33,30,.42)] transition-shadow duration-700 ease-[var(--ease-calm)] group-hover:shadow-[0_46px_64px_-28px_rgba(22,33,30,.5)]">
+              <div className="group/image rooh-arch relative aspect-[4/5] w-full max-w-sm overflow-hidden bg-sand-100 shadow-[0_34px_52px_-28px_rgba(22,33,30,.42)] transition-shadow duration-700 ease-[var(--ease-calm)] group-hover:shadow-[0_46px_64px_-28px_rgba(22,33,30,.5)]">
                 <Image
                   src={product.image}
                   alt={product.imageAlt}
                   fill
                   sizes="(min-width: 1024px) 384px, 100vw"
-                  className="object-cover transition-transform duration-[900ms] ease-[var(--ease-calm)] group-hover:scale-[1.045]"
+                  className="object-cover transition-[opacity,transform] duration-[900ms] ease-[var(--ease-calm)] group-hover/image:scale-[1.045] group-hover/image:opacity-0"
+                />
+                <Image
+                  src={product.hoverImage}
+                  alt={product.hoverImageAlt}
+                  fill
+                  sizes="(min-width: 1024px) 384px, 100vw"
+                  className="object-cover opacity-0 transition-[opacity,transform] duration-[900ms] ease-[var(--ease-calm)] group-hover/image:scale-[1.045] group-hover/image:opacity-100"
                 />
               </div>
             </div>
@@ -83,14 +90,12 @@ export default function ProductsPage() {
                 Shop on Amazon
                 <span aria-hidden="true">&rarr;</span>
               </a>
-              {product.detail && (
-                <Link
-                  href={product.detail}
-                  className="mt-10 ml-6 inline-block border-b border-jade-400 pb-1 text-xs uppercase tracking-[0.18em] text-jade-800 transition-colors hover:border-clay hover:text-clay"
-                >
-                  Full details
-                </Link>
-              )}
+              <Link
+                href={`/products/${product.slug}`}
+                className="mt-10 ml-6 inline-block border-b border-jade-400 pb-1 text-xs uppercase tracking-[0.18em] text-jade-800 transition-colors hover:border-clay hover:text-clay"
+              >
+                Full details
+              </Link>
               <p className="mt-3 text-xs text-jade-500">
                 Opens Amazon in a new tab. Pricing and delivery shown there.
               </p>

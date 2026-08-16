@@ -4,13 +4,20 @@ import Image from "next/image";
 export default function ProductCard({ product }) {
   return (
     <article className="group flex flex-col">
-      <div className="rooh-arch relative aspect-[3/4] w-full overflow-hidden bg-sand-100 transition-transform duration-700 ease-[var(--ease-calm)] group-hover:-translate-y-1">
+      <div className="group/image rooh-arch relative aspect-[3/4] w-full overflow-hidden bg-sand-100 transition-transform duration-700 ease-[var(--ease-calm)] group-hover:-translate-y-1">
         <Image
           src={product.image}
           alt={product.imageAlt}
           fill
           sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 100vw"
-          className="object-cover"
+          className="object-cover transition-opacity duration-500 ease-[var(--ease-calm)] group-hover/image:opacity-0"
+        />
+        <Image
+          src={product.hoverImage}
+          alt={product.hoverImageAlt}
+          fill
+          sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 100vw"
+          className="object-cover opacity-0 transition-opacity duration-500 ease-[var(--ease-calm)] group-hover/image:opacity-100"
         />
       </div>
 

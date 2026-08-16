@@ -194,7 +194,15 @@ export default function HomePage() {
               {lead.materials} {lead.origin}.
             </p>
 
-            <ShopLink product={lead} className="mt-6" />
+            <div className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-3">
+              <ShopLink product={lead} />
+              <Link
+                href={`/products/${lead.slug}`}
+                className="text-xs uppercase tracking-[0.18em] text-jade-600 transition-colors hover:text-clay"
+              >
+                Full details
+              </Link>
+            </div>
           </div>
         </Reveal>
 
@@ -231,14 +239,12 @@ export default function HomePage() {
 
               <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2">
                 <ShopLink product={product} />
-                {product.detail && (
-                  <Link
-                    href={product.detail}
-                    className="text-xs uppercase tracking-[0.18em] text-jade-600 transition-colors hover:text-clay"
-                  >
-                    Full details
-                  </Link>
-                )}
+                <Link
+                  href={`/products/${product.slug}`}
+                  className="text-xs uppercase tracking-[0.18em] text-jade-600 transition-colors hover:text-clay"
+                >
+                  Full details
+                </Link>
               </div>
             </Reveal>
           ))}

@@ -26,6 +26,9 @@ All three SKUs now have a long-form direct response page, sharing one template
 [lib/salesCopy.js](lib/salesCopy.js). Placeholders to resolve before launch:
 - **Proof strips** on all three are deliberately empty, carrying a bracketed note instead of a star rating and review count. Fill only from real Amazon reviews.
 - **Cooling pillowcase**: exact dimensions and the launch colourway list are marked TBD in the FAQ.
+- **Cooling sheet set**: this SKU is the least resolved. It has no photography (the homepage and its detail page both reuse `home-hero.png`, exactly as the design file does), no confirmed origin (`Origin to be confirmed` renders on the products page), no fibre split, no sizes, and no confirmed box contents. Prompt 3 in [IMAGE_PROMPTS.md](IMAGE_PROMPTS.md) covers the missing photograph.
+- **Cooling sheet set, wording to review**: the homepage description is carried verbatim from the design file and says the weave "regulates temperature through the night", which is a stronger performance claim than anything else on the site makes. Its detail page deliberately does not repeat it. Decide which register you want and make the two consistent.
+- **Bamboo labelling**: "bamboo" fabric is nearly always viscose or lyocell made from bamboo pulp, and regulators expect it described that way. The detail page FAQ answers this honestly and openly; make sure the Amazon listing and any packaging match that description.
 - **Silk pillowcase**: copy describes silk's low-friction surface only. Do not add hair or skin outcome claims without substantiation.
 - **Seed eye mask**: seed type, sourcing region, and weight in grams are marked TBD in the FAQ.
 - Claims held back on purpose across all three: nothing about what any product does to your body, no blackout claim on the mask, and an explicit "do not microwave" answer.

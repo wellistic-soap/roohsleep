@@ -67,7 +67,7 @@ export default function HomePage() {
 
             <p className="mt-7 max-w-lg text-base leading-relaxed text-jade-100/85">
               Sleep textiles made through direct relationships with the mills and
-              workshops of Sialkot and across South and Southeast Asia. Fewer things,
+              workshops of Pakistan and across South and Southeast Asia. Fewer things,
               made properly, for the hours that put you back together.
             </p>
 
@@ -280,8 +280,8 @@ export default function HomePage() {
               every seam.
             </p>
             <p className="mt-5 text-sm leading-[1.8] text-jade-800/85">
-              Rooh grew out of manufacturing relationships built over years in Sialkot and
-              across Pakistan, Bangladesh, Indonesia, Vietnam, Thailand, and China. Not
+              Rooh grew out of manufacturing relationships built over years across
+              Pakistan, Bangladesh, Indonesia, Vietnam, Thailand, and China. Not
               through a trading company, not through a sourcing agent. Through people we
               call directly.
             </p>

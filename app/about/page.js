@@ -5,11 +5,11 @@ import { BlockPrintRule, LotusMark } from "@/components/Motifs";
 export const metadata = {
   title: "Our Story",
   description:
-    "Rooh means soul. The brand grew out of direct manufacturing relationships in Sialkot, Pakistan and across South and Southeast Asia.",
+    "Rooh means soul. The brand grew out of direct manufacturing relationships in Pakistan and across South and Southeast Asia.",
 };
 
 const regions = [
-  { place: "Sialkot, Pakistan", note: "Cut and sew, and the workshops we know best." },
+  { place: "Pakistan", note: "Cut and sew, and the workshops we know best." },
   { place: "Bangladesh", note: "Cotton knits and jersey weight goods." },
   { place: "Vietnam", note: "Foam and structured pillow construction." },
   { place: "Indonesia and Thailand", note: "Natural fills and finishing." },
@@ -84,7 +84,7 @@ export default function AboutPage() {
             </p>
             <p className="mt-5 text-sm leading-relaxed text-jade-800/85">
               Rooh started from the other end. The manufacturing relationships came first,
-              built over years of working directly with mills and workshops in Sialkot and
+              built over years of working directly with mills and workshops in Pakistan and
               across the region. The brand is what got built on top of them.
             </p>
             <p className="mt-5 text-sm leading-relaxed text-jade-800/85">

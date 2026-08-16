@@ -166,7 +166,7 @@ The left half stays empty so the wordmark can be composited over it.
 
 ## Two things to hold the line on
 
-**Do not generate the Sialkot imagery.** Prompts 5 and 6 are materials and
+**Do not generate the workshop imagery.** Prompts 5 and 6 are materials and
 architecture on purpose. An AI-generated photograph of a workshop floor, placed
 on the page whose entire argument is that the sourcing relationships are real and
 direct, converts your strongest claim into your only fabricated one. The

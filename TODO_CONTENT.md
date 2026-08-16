@@ -12,7 +12,7 @@ Generation prompts for every slot below are in [IMAGE_PROMPTS.md](IMAGE_PROMPTS.
 There is no photography in the mockup. Every image slot is an arch-shaped placeholder (`ArchPlaceholder` in [components/Motifs.js](components/Motifs.js)) filled with a jaali lattice pattern.
 - Home hero: intended for a calm, dark-toned lifestyle video or still.
 - Product cards and product rows: one hero image per SKU, shared photography style across all three.
-- Our Story: workshop / Sialkot floor imagery, and optionally a founder portrait.
+- Our Story: workshop floor imagery, and optionally a founder portrait.
 - Lifestyle shots (`*-lifestyle.png`) crossfade in on hover over any product image, wired through `hoverImage` in [lib/products.js](lib/products.js). They are AI-generated people, so confirm they are acceptable to show as brand imagery before launch, and note the swap only fires on pointer devices.
 
 ## Copy
